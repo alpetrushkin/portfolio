@@ -202,6 +202,62 @@ html, body {
     font-size: 24px;
 }
 
+/*PROJECT-CARDS*/
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-cards__title {
+    margin-bottom: 40px;
+}
+
+.card-item {
+    max-width: 865px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-cart {
+    border-radius: 10px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.25);
+    margin-bottom: 40px;
+}
+
+.card-description {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: -0.5px;
+    color: var(--dark-text);
+}
+
+.card-link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 12px 20px;
+    transition: opacity 0.3s ease-in;
+}
+.card-link:hover {
+    opacity: 0.8;
+}
+.card-link:active {
+    position: relative;
+    top: 1px;
+}
+
+
 /*FOOTER*/
 
 .footer {
