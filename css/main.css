@@ -23,6 +23,9 @@
 }
 
 html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -257,10 +260,44 @@ html, body {
     top: 1px;
 }
 
+/*SKILLS*/
+
+.skills {
+    max-width: 571px;
+    text-align: center;
+    color: var(--dark-text);
+    letter-spacing: -0.5px;
+}
+
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.3;
+}
+
+.skills-contact {
+    color: var(--accent);
+}
+
+.skills-subtitle {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
 
 /*FOOTER*/
 
 .footer {
+    margin-top: auto;
     padding: 60px 0 50px;
     background-color: var(--dark-bg);
 }
