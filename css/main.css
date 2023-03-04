@@ -2,24 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 
-/*font-family: 'DM Sans', sans-serif;*/
-/*font-family: 'Poppins', sans-serif;*/
-
-/** {*/
-/*     border: 1px solid red;*/
-/*}*/
-
 :root {
     --black: #171718;
     --dark-border: #26292D;
     --white: #fff;
     --purple: #5C62EC;
+    --page-color: #272727;
 
     --dark-bg: var(--black);
     --dark-text: var(--black);
     --header-text: var(--white);
     --accent: var(--purple);
     --header-border: var(--dark-border);
+
+    /*Light mode*/
+    --page-bg: var(--black);
+    --color-text: var(--white);
+}
+
+.dark {
+    --page-bg: var(--page-color);
+    --color-text: var(--white);
+    min-height: 100vh;
 }
 
 html, body {
@@ -27,6 +31,9 @@ html, body {
     flex-direction: column;
     height: 100%;
     font-family: 'DM Sans', sans-serif;
+
+    --page-bg: var(--white);
+    --color-text: var(--black);
 }
 
 .container {
@@ -203,6 +210,7 @@ html, body {
 /*PROJECT*/
 
 .projects {
+    background-color: var(--page-bg);
     padding: 70px 0;
     letter-spacing: -0.5px;
     font-weight: 700;
@@ -303,7 +311,7 @@ html, body {
 .skills {
     max-width: 571px;
     text-align: center;
-    color: var(--dark-text);
+    color: var(--color-text);
     letter-spacing: -0.5px;
 }
 
